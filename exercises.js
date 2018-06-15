@@ -98,7 +98,21 @@ devleague homie!
 ...
 ...
 ...*/
-
+var number = 0;
+var counter = 0;
+while(counter < 100){
+	number++;
+counter++;
+if(number % 3 === 0 && number % 5 === 0){
+	console.log('devleague homie!');
+}else if(number % 3 === 0){
+console.log('dev');
+}else if(number % 5 === 0){
+	console.log('league');
+}else{
+	console.log(number);
+}
+}
 
 /*
  * #6
@@ -110,7 +124,15 @@ devleague homie!
  will purchase a donut as long as you have the sufficient funds.
  *Pass in a number value to invoke your function. Console.log donutBought.
 */ 
-
-
+var donutPrice = 5;
+var donutBought = 0;
+function buyDonut(budget){
+	while(budget >= donutPrice){
+		budget -= donutPrice;
+		donutBought++;
+	}
+}
+buyDonut(100);
+console.log(donutBought);
 
 
